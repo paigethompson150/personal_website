@@ -1,0 +1,290 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Work Sans';
+}
+
+header {
+ display: flex;
+ flex-wrap: nowrap;
+ justify-content: center;
+}
+
+
+.right_header li {
+  display: inline;
+}
+
+.right_header ul {
+  padding: 15px;
+}
+
+.right_header{
+  max-width: 25%;
+}
+
+.left_header{
+  min-width:75%;
+}
+
+.left_header img {
+  float: left;
+}
+
+
+.main_wrapper {
+  display: flex;
+  max-height: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+
+  
+} 
+
+.animation {
+
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+  background-color: black;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.intro_wrapper {
+  max-width: 30%;
+  min-width: 30%;
+  padding: 10px;
+  margin-top: -30px;
+}
+
+.intro_wrapper h1 {
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
+}
+
+.intro_wrapper p, .intro_wrapper h2 {
+  margin-top: -15px;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+#button_1 {
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
+}
+
+#button_2 {
+  -moz-animation: fadein 5.5s; /* Firefox */
+  -webkit-animation: fadein 5.5s; /* Safari and Chrome */
+  -o-animation: fadein 5.5s; /* Opera */
+}
+
+#button_3 {
+  -moz-animation: fadein 7s; /* Firefox */
+  -webkit-animation: fadein 7s; /* Safari and Chrome */
+  -o-animation: fadein 7s; /* Opera */
+}
+
+.buttons button {
+  min-width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 50%;
+  
+}
+
+footer{
+  padding-top: 100px;
+}
+
+.buttons button:hover {
+  -webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+  color: white;
+  border: 3px solid rgb(41, 92, 108);
+  box-shadow: 0 0 10px #2b4f6c;
+}
+
+@media (max-width: 1000px){
+  .main_wrapper{
+    display: inline-block;
+    text-align: center;
+  }
+  .intro_wrapper{
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .buttons {
+    justify-content: center;
+    min-width: 50%;
+  }
+  
+  
+}
+
+
+
+
+
+
+#about_me {
+  display: flex;
+  margin-top: 300px;
+}
+
+#about_me .info {
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 5%;
+  min-width: 50%;
+  border: 20px;
+  margin-right: 20px;
+}
+
+
+.box {
+  min-width: 45%;
+  height: 550px;
+  border: solid orange 18px;
+  margin: 15px;
+}
+
+.box img {
+  border: 1px solid white;
+  /*position: relative;*/
+}
+
+#selfie {
+  /*position: absolute;*/
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 250px;
+  margin-left: 200px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+}
+
+footer a:hover {
+  box-shadow: 0 0 10px #2b4f6c;
+  border-radius: 100%;
+  padding: 10px;
+  border: none;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+    
+    border: 3px solid rgb(41, 92, 108);
+    box-shadow: 0 0 10px #2b4f6c;
+  
+}
+
+#preloader {
+  background: white url(https://flevix.com/wp-content/uploads/2020/01/Preloader.gif) no-repeat center center;
+  background-size: 80%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
