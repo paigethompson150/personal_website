@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <!-- inserting script for buttons, credit to fontawesome.com-->
     <script src="https://kit.fontawesome.com/42b95ce0bd.js" crossorigin="anonymous"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
     <body>
     <main>
         <div id="preloader"></div>
 
-        <header>
+        <header id="header">
             <div class="left_header">
                 <img src="https://thumbs.dreamstime.com/b/sticker-cartoon-laptop-computer-creative-illustrated-147694670.jpg" height="60px" width="60px">
                 <h2 style="padding: 10px;">Paige Thompson</h2>
@@ -60,24 +62,23 @@
             </div>
         </section>
 
-        <section id="about_me">
-            <div class="box">
-               <!--- <img src="https://c.tenor.com/Qi_CLKscLZwAAAAM/ramen-noodles.gif" width=100% height=30%>
-                <img src="https://media1.giphy.com/media/H1f1T0tKK4jEfNt6MG/giphy.gif?cid=e2a3cbdexbnd3npejvdgwew072n9ao3v50y5miubiqtg6yaa&rid=giphy.gif&ct=g" width="100%" height="70%">-->
-                <!--<img id='selfie' src="photos/closeup.png"> -->
-            </div>
-            <div class="info">
+        <section id="about_me" class="fade-in slide-in">
+            
+            <div class="info" data-aos="fade-in">
                 <h1 style="font-size: 40px;">About Me</h1>
                 <p>I'm under construction!</p>
+            </div>
+            <div class="box">
+                <img id='selfie' src="photos/drawing.png"> 
             </div>
             
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" data-aos="fade-in">
             <h1>Under construction!</h1>
         </section>
 
-        <section id="contact">
+        <section id="contact" data-aos="fade-in">
             <h1>Under construction!</h1>
         </section>
 
@@ -90,6 +91,7 @@
             <a href="https://www.youtube.com/channel/UCM1h2cRlCfXEta6tXP4_wwg" target="_blank"><i class="fab fa-youtube"></i></a>
         </footer>      
         
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             var loader = document.getElementById('preloader');
             var circle = document.getElementsByClassName('circle');
@@ -102,8 +104,21 @@
                 
             });
 
+            window.onscroll = function(){
+                scroll();
+            };
 
+            function scroll() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getELementById("header").style.top = "0";
+                }else{
+                    document.getElementById("header").style.top = "-60px";
+                }
+            }
+
+            AOS.init();
         </script>
+       
     </body>
 
         <!-- fade-in-text class -->
