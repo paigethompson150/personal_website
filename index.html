@@ -41,9 +41,9 @@
         
         <section class="main_wrapper">
             <div class="pro_pic">
-                <img class="circle" src="photos/pro-pic.jpg" alt="Picture of Paige smiling">
+                <img class="circle animation" src="photos/pro-pic.jpg" alt="Picture of Paige smiling">
             </div>
-            <div class="intro_wrapper">
+            <div class="intro_wrapper animation">
                 <h1 style="font-size: 60px; font-weight: bold;">Hey!</h1>
                 <h2 style="font-size: 25px; font-weight: bold; margin-top: -15px;">Welcome to my website.</h2>
                 <div class="info">
@@ -52,7 +52,7 @@
                         about website development. </p>
                 </div>
                 
-                <div class ="buttons">
+                <div class ="buttons animation">
                     <a href="#about_me"><button id='button_1'style="background-color: rgb(108, 160, 233);">About Me</button></a>
                     <a href="#portfolio"><button id='button_2'style="background-color:rgb(243, 140, 189)">Portfolio</button></a>
                     <a href="#contact"><button id='button_3'style="background-color:rgb(222, 156, 106)">Contact</button></a>
@@ -98,7 +98,6 @@
             window.addEventListener("load", function(){
                 setTimeout(function(){
                     loader.style.display = "none";
-                    circle.classList.add('animation');
                 }, 2000)
                 
             });

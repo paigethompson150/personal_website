@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: 'Work Sans';
+
 }
 
 header {
@@ -46,18 +47,18 @@ header {
   object-fit: cover;
   width: 400px;
   height: 400px;
-  margin: 30px;
-
-  
+  margin: 30px;  
 } 
 
-.animation {
+.animation{
 
   -webkit-animation: slideIn 2s forwards;
   -moz-animation: slideIn 2s forwards;
   animation: slideIn 2s forwards;
-  background-color: black;
+  animation-delay: 2000ms;
 }
+
+
 
 @-webkit-keyframes slideIn {
   0% {
@@ -78,46 +79,16 @@ header {
 @keyframes slideIn {
   0% {
     transform: translateX(-900px);
+    opacity: 0%;
+  }
+  50%{
+    opacity: 50%;
   }
   100% {
     transform: translateX(0);
+    opacity: 100%;
   }
 }
-
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
 
 
 
@@ -128,35 +99,9 @@ header {
   margin-top: -30px;
 }
 
-.intro_wrapper h1 {
-  -moz-animation: fadein 1.5s; /* Firefox */
-  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
-  -o-animation: fadein 1.5s; /* Opera */
-}
 
 .intro_wrapper p, .intro_wrapper h2 {
   margin-top: -15px;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
-}
-
-#button_1 {
-  -moz-animation: fadein 4s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari and Chrome */
-  -o-animation: fadein 4s; /* Opera */
-}
-
-#button_2 {
-  -moz-animation: fadein 5.5s; /* Firefox */
-  -webkit-animation: fadein 5.5s; /* Safari and Chrome */
-  -o-animation: fadein 5.5s; /* Opera */
-}
-
-#button_3 {
-  -moz-animation: fadein 7s; /* Firefox */
-  -webkit-animation: fadein 7s; /* Safari and Chrome */
-  -o-animation: fadein 7s; /* Opera */
 }
 
 .buttons button {
@@ -286,5 +231,4 @@ footer a:hover {
   width: 100%;
   position: fixed;
   z-index: 100;
-
 }
