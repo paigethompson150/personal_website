@@ -12,8 +12,6 @@ body {
   display: flex;
  flex-wrap: nowrap;
  justify-content: center;
- position: fixed;
- transition: top 0.5s;
  width: 100% !important;
 }
 
@@ -59,7 +57,7 @@ body {
   -webkit-animation: slideIn 2s forwards;
   -moz-animation: slideIn 2s forwards;
   animation: slideIn 2s forwards;
-  animation-delay: 1800ms;
+  animation-delay:1700ms;
 }
 
 
@@ -241,4 +239,3 @@ footer a:hover {
   top: 0;
   width: 100%;
 }
-
