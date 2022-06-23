@@ -7,10 +7,14 @@ body {
 
 }
 
-header {
- display: flex;
+#header{
+  background-color: white;
+  display: flex;
  flex-wrap: nowrap;
  justify-content: center;
+ position: fixed;
+ transition: top 0.5s;
+ width: 100% !important;
 }
 
 
@@ -55,7 +59,7 @@ header {
   -webkit-animation: slideIn 2s forwards;
   -moz-animation: slideIn 2s forwards;
   animation: slideIn 2s forwards;
-  animation-delay: 2000ms;
+  animation-delay: 1800ms;
 }
 
 
@@ -174,11 +178,14 @@ transition: all 500ms ease;
   margin-right: 20px;
 }
 
+.info h1 {
+  width: 100%;
+  background-color: lightblue;
+}
 
 .box {
-  min-width: 45%;
+  min-width: 40%;
   height: 550px;
-  border: solid orange 18px;
   margin: 15px;
 }
 
@@ -193,8 +200,7 @@ transition: all 500ms ease;
   height: 300px;
   float: left;
   margin-top: 250px;
-  margin-left: 200px;
-  border-radius: 50%;
+  margin-left: 0px;
 }
 
 a {
@@ -210,6 +216,7 @@ footer {
 
 footer a:hover {
   box-shadow: 0 0 10px #2b4f6c;
+  border: 3px solid rgb(41, 92, 108);
   border-radius: 100%;
   padding: 10px;
   border: none;
@@ -218,10 +225,6 @@ footer a:hover {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-    
-    border: 3px solid rgb(41, 92, 108);
-    box-shadow: 0 0 10px #2b4f6c;
-  
 }
 
 #preloader {
@@ -232,3 +235,10 @@ footer a:hover {
   position: fixed;
   z-index: 100;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
