@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <!-- inserting script for buttons, credit to fontawesome.com-->
-    <script src="https://kit.fontawesome.com/42b95ce0bd.js" crossorigin="anonymous"></script>
-
+    <!-- inserting devicon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -41,7 +39,7 @@
         </header>
 
         
-        <section class="main_wrapper">
+        <section class="main_wrapper" data-aos="fade-in">
             <div class="pro_pic">
                 <img class="circle animation" src="photos/pro-pic.jpg" alt="Picture of Paige smiling">
             </div>
@@ -55,9 +53,9 @@
                 </div>
                 
                 <div class ="buttons animation">
-                    <a href="#about_me"><button id='button_1'style="background-color: rgb(108, 160, 233);">About Me</button></a>
-                    <a href="#portfolio"><button id='button_2'style="background-color:rgb(243, 140, 189)">Portfolio</button></a>
-                    <a href="#contact"><button id='button_3'style="background-color:rgb(222, 156, 106)">Contact</button></a>
+                    <a href="#about_me"><button style="background-color: rgb(108, 160, 233);">About Me</button></a>
+                    <a href="#portfolio"><button style="background-color:rgb(243, 140, 189)">Portfolio</button></a>
+                    <a href="#contact"><button style="background-color:rgb(222, 156, 106)">Contact</button></a>
                 </div>
             </div>
         </section>
@@ -65,12 +63,35 @@
         <section id="about_me" class="fade-in slide-in">
             
             <div class="info" data-aos="fade-in">
-                <h1 style="font-size: 40px;">About Me</h1>
-                <p>I'm under construction!</p>
+                <h1 style="font-size: 60px;">About <span style="color:rgb(108, 160, 233); font-weight: bold;">Me</span></h1>
+                <h2 style="font-size: 25px;">My name's Paige, and I'm an aspiring full-stack developer.</h2>
+
+                <div class="about_info">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Nunc non blandit massa enim nec dui nunc. Egestas sed sed 
+                 risus pretium quam. Phasellus egestas tellus rutrum tellus pellentesque eu. Elit at imperdiet dui accumsan sit amet nulla. 
+                 Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Cursus vitae congue mauris rhoncus aenean vel elit. Nisi scelerisque 
+                 eu ultrices vitae auctor eu augue ut.
+                    </p>
+                    <p>
+                        Vulputate dignissim suspendisse in <span style="color:rgb(108, 160, 233); font-weight: bold;">Linkedin</span> ante <span style="color:rgb(108,160,233); font-weight:bold;">Github</span> nibh.
+                    </p>
+                    <div class="logos">
+                        <i class="devicon-github-original colored"></i>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-java-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-ruby-plain colored"></i>
+                        <i class="devicon-rstudio-plain colored"></i>
+                        <i class="devicon-vscode-plain colored"></i>
+
+
+
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <img id='selfie' src="photos/drawing.png"> 
-            </div>
+            
             
         </section>
 
@@ -84,8 +105,9 @@
 
     </main>
 
-        <footer>
-            <a href="https://www.linkedin.com/in/paige-thompson-3973251a1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <footer data-aos="fade-in">
+            <a href="https://www.linkedin.com/in/paige-thompson-3973251a1/" target="_blank"><i class="devicon-linkedin-plain colored"></i>
+            </a>
             <a href="https://github.com/paigethompson150" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://open.spotify.com/user/hubalumps?si=waIxfKIvQwKvlT2u8VWAyA&nd=1" target="_blank"><i class="fab fa-spotify"></i></a>
             <a href="https://www.youtube.com/channel/UCM1h2cRlCfXEta6tXP4_wwg" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -104,19 +126,14 @@
                 
             });
 
-            window.onscroll = function(){
-                scroll();
-            };
-
-            function scroll() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getELementById("header").style.top = "0";
-                }else{
-                    document.getElementById("header").style.top = "-60px";
-                }
-            }
-
             AOS.init();
+
+            window.open    = function(){};
+            window.print   = function(){};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function(){};
+            }
         </script>
        
     </body>
