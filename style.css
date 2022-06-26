@@ -289,6 +289,10 @@ a {
   color: white;
 }
 
+.portfolio-link {
+  color: rgba(206, 91, 145, 0.831);
+}
+
 .project-buttons .right-button{
   background: white;
   border-color: rgba(226, 178, 200, 0.831);
@@ -315,7 +319,7 @@ a {
 }
 
 #contact{
-  margin-top: 500px;
+  margin-top: 600px;
   text-align: center;
 }
 
@@ -323,6 +327,6 @@ footer {
   text-align: center;
   padding: 30px;
   font-size: 50px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
